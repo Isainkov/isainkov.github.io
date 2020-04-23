@@ -99,3 +99,19 @@ form{
 	font-size: 18px;
 	font-weight: 400;
 }
+.costumer-photo{
+	padding-top: 90px;
+	padding-bottom: 99px;
+}
+
+.single-photo{
+	float:left;
+	display: inline-block;
+	width:25%;
+	margin-bottom: 40px;
+}
+.costumer-photo_wrap{
+	content: '';
+	display: table;
+	clear:both;
+}
