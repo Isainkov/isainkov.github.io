@@ -27,7 +27,7 @@ button:focus{
 	font-weight: 700;
 	padding: 22px 43px;
 	margin-right: 40px;
-}
-.error_button{
-	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
