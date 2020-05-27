@@ -88,6 +88,7 @@ button:focus{
 .top__button{
 	margin-top: 40px;
 	padding-left: 80px;
+
 	
 }
 .button{
@@ -124,12 +125,13 @@ button:focus{
 }
 .single-first{
 	margin-left: 70px;
-	float: left;
+	/*float: left;*/
 	display: inline-block;
 	width:25%;
 	margin-bottom: 40px;
 	text-align: center;
 }
+
 .text-up{
 	margin-top: 10px;
 }
@@ -181,4 +183,18 @@ button:focus{
 	padding-left: 70px;
 	color: white;
 	background-color: #b40b27;
+	font-size: 17px;
+}
+.root{
+display: inline-block;
+
+}
+.designed{
+	padding-right: 70px;
+	display: inline-block;
+	float: right;
+}
+.designed a{
+	text-decoration: underline dotted;
+	color:white;
 }
