@@ -58,7 +58,7 @@ button:focus{
 	font-size: 18px;
 }
 .top{
-	background-image: url(../img/bg-top.jpg);
+	background-image: url(../img/bg-top1.jpg);
 	padding-top: 130px;
 	padding-bottom: 130px;
 }
@@ -112,9 +112,7 @@ button:focus{
 	margin-bottom: 30px;
 }
 .team__photo{
-	content: '';
-	display: table;
-	clear:both;
+	text-align: center;
 }
 
 .team__title{
@@ -140,15 +138,7 @@ button:focus{
 	margin-top:5px;
 	color:rgba(0,0,0,0.7);
 }
-.single-second{
-	float:left;
-	display: inline-block;
-	width:40%;
-	margin-left:70px;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	text-align: center;
-}
+
 .detail{
 	background-image: url(../img/bg-down.jpg);
 	padding-top: 30px;
