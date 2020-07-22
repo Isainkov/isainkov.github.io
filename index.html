@@ -21,7 +21,7 @@
 
 <body>
 	<header class="header">
-		<nav class="navbar navbar-expand-md navbar-light fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="https://www.kpi.kharkov.ua/ukr/" target="_blank"><img src="img/header/header-logo.png" alt=""></a>
 				<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,8 +30,10 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="files/KhpiRunner.zip">
-								<img class="download-icon"src="img/header/download.png" alt=""> завантажити</a>
+							<div class="popup-click">
+								<a class="nav-link" href="#">
+									<img class="download-icon"src="img/header/download.png" alt=""> завантажити</a>
+								</div>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#team" class="scroll-to">команда</a>
@@ -70,11 +72,14 @@
 								</div>
 								<!-- /.form-text -->
 								<div class="form-button">
-									<form>
-										<a href="files/KhpiRunner.zip" download="">
-											<input class="button" type="button" value="Завантажити">
-										</a>
-									</form>
+									<div class="popup-click">
+										<form>
+											<a href="#" download="">
+												<input class="button" type="button" value="Завантажити">
+											</a>
+										</form>
+									</div>
+									
 								</div>
 								<!-- /.form-button -->
 							</div>
@@ -98,7 +103,7 @@
 						<div class="col-12 col-md-4">
 							<div class="team-photo__img">
 								<a href="https://www.instagram.com/gemini_di_/" target="_blank">
-								<img src="img/team/Koval.png" alt="Koval">
+									<img src="img/team/Koval.png" alt="Koval">
 								</a>
 							</div>
 							<!-- /.team-photo__img -->
@@ -115,7 +120,7 @@
 						<div class="col-12 col-md-4">
 							<div class="team-photo__img">
 								<a href="https://www.instagram.com/zaiets_maksim/" target="_blank">
-								<img src="img/team/Zaets.png" alt="Zaets">
+									<img src="img/team/Zaets.png" alt="Zaets">
 								</a>
 							</div>
 							<!-- /.team-photo__img -->
@@ -132,7 +137,7 @@
 						<div class="col-12 col-md-4">
 							<div class="team-photo__img">
 								<a href="https://www.instagram.com/illia.isainkov/" target="_blank">
-								<img src="img/team/Isainkov.png" alt="Isainkov">
+									<img src="img/team/Isainkov.png" alt="Isainkov">
 								</a>
 							</div>
 							<!-- /.team-photo__img -->
@@ -198,6 +203,49 @@
 			</div>
 			<!-- /.container -->
 		</footer>
+
+		<div class="overlay">
+			<div class="popup">
+				<div class="popup-title">
+					Завантажити KhPI Runner
+				</div>
+				<!-- /.popup-title -->
+				<div class="popup-close">
+					&times;
+				</div>
+				<!-- /.popup close -->
+				<div class="popup-description">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-6">
+							<div class="popup-description__text">
+								<span class="text-span">версія гри: </span> 1.03 alpha <br>
+								<span class="text-span">жанр: </span> runner <br>
+								<span class="text-span">ос: </span> windows <br>
+								<span class="text-span">місце на диску: </span> 19.2 MB <br>
+								<span class="text-span">тип файлу: </span> .rar <br>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="popup-description__logo">
+								<img src="img/popup/logo.png" alt="">
+							</div>
+							
+						</div>
+					</div>
+					<div class="popup-button">
+						<form>
+							<a href="files/KhPI_Runner.rar" download="">
+								<input class="button" type="button" value="Завантажити">
+							</a>
+						</form>
+					</div>
+				</div>
+				<!-- /.popup-description -->
+			</div>
+			<!-- /.popup -->
+		</div>
+		<!-- /.overlay -->
+
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/main.js"></script>

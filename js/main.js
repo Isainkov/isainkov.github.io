@@ -8,4 +8,12 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+	$('.popup-click').on("click", function(){
+		$('.overlay').show();
+	});
+	$('.popup-close').on("click", function(){
+$('.overlay').hide();
+	});
+
 });

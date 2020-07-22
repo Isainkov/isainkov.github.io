@@ -1,8 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  * img {
-    max-width: 100%; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -11,7 +9,8 @@ body {
   background-color: #b40b27; }
 
 .navbar {
-  background-color: #b40b27; }
+  background-color: #b40b27;
+  z-index: 1; }
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
@@ -46,7 +45,7 @@ body {
 
 .download-icon {
   margin-right: 3px;
-  width: 16px; }
+  width: 18px; }
 
 .header .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
@@ -95,6 +94,7 @@ body {
   margin-left: 40px; }
 
 .button {
+  border: 1px solid grey;
   margin-top: 30px;
   text-align: center;
   border-radius: 15px;
@@ -108,9 +108,10 @@ body {
   -webkit-box-shadow: 10px 3px 5px black;
   box-shadow: 10px 3px 5px black; }
   .button:hover {
-    font-size: 23px;
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #fff; }
 
 .team {
   padding-top: 100px;
@@ -139,6 +140,8 @@ body {
   background-size: cover;
   padding-top: 67px;
   padding-bottom: 70px; }
+  .details img {
+    max-width: 100%; }
   .details-wrapper__title {
     color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
@@ -166,3 +169,60 @@ body {
   color: #fff; }
   .footer a {
     color: #fff; }
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .overlay img {
+    max-width: 100%; }
+  .overlay .popup {
+    position: fixed;
+    left: 50%;
+    max-width: 80%;
+    top: 80px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #fff; }
+    .overlay .popup-close {
+      position: absolute;
+      right: -20px;
+      top: -40px;
+      font-size: 35px;
+      color: #fff;
+      font-weight: 300;
+      cursor: pointer; }
+    .overlay .popup-title {
+      display: block;
+      width: 100%;
+      height: 40px;
+      margin: 0;
+      background-color: #b40b27;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 40px;
+      font-size: 19px;
+      font-weight: 400; }
+    .overlay .popup-description {
+      background-color: #fff;
+      padding-top: 10px;
+      color: #000;
+      text-align: center; }
+      .overlay .popup-description__text {
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 40px; }
+    .overlay .popup-button {
+      text-align: center;
+      margin-left: 15px;
+      margin-bottom: 20px; }
+
+.text-span {
+  color: #b40b27; }
